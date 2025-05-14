@@ -65,11 +65,11 @@ public class ContactController {
         return modelAndView;
     }
 
-//    @RequestMapping(value = "/closeMsg",method = GET)
-//    public String closeMsg(@RequestParam int id, Authentication authentication) {
-//        contactService.updateMsgStatus(id,authentication.getName());
-//        return "redirect:/displayMessages";
-//    }
+    @RequestMapping(value = "/closeMsg",method = GET)
+    public String closeMsg(@RequestParam int id, Authentication authentication) {
+        contactService.updateMsgStatus(id,authentication.getName());
+        return "redirect:/displayMessages";
+    }
 
 
 
