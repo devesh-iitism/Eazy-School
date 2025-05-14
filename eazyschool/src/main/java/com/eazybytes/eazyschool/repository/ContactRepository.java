@@ -1,7 +1,7 @@
 package com.eazybytes.eazyschool.repository;
 
 import com.eazybytes.eazyschool.model.Contact;
-//import com.eazybytes.eazyschool.rommappers.ContactRowMapper;
+import com.eazybytes.eazyschool.rowmappers.ContactRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
@@ -36,14 +36,14 @@ public class ContactRepository {
                 contact.getStatus(),contact.getCreatedAt(),contact.getCreatedBy());
     }
 
-//    public List<Contact> findMsgsWithStatus(String status) {
-//        String sql = "SELECT * FROM CONTACT_MSG WHERE STATUS = ?";
-//        return jdbcTemplate.query(sql,new PreparedStatementSetter() {
-//            public void setValues(PreparedStatement preparedStatement) throws SQLException {
-//                preparedStatement.setString(1, status);
-//            }
-//        },new ContactRowMapper());
-//    }
+    public List<Contact> findMsgsWithStatus(String status) {
+        String sql = "SELECT * FROM CONTACT_MSG WHERE STATUS = ?";
+        return jdbcTemplate.query(sql,new PreparedStatementSetter() {
+            public void setValues(PreparedStatement preparedStatement) throws SQLException {
+                preparedStatement.setString(1, status);
+            }
+        },new ContactRowMapper());
+    }
 //
 //    public int updateMsgStatus(int contactId, String status,String updatedBy) {
 //        String sql = "UPDATE CONTACT_MSG SET STATUS = ?, UPDATED_BY = ?,UPDATED_AT =? WHERE CONTACT_ID = ?";

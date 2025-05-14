@@ -38,11 +38,11 @@ public class ContactService {
         return isSaved;
     }
 
-//    public List<Contact> findMsgsWithOpenStatus(){
-//        List<Contact> contactMsgs = contactRepository.findMsgsWithStatus(EazySchoolConstants.OPEN);
-//        return contactMsgs;
-//    }
-//
+    public List<Contact> findMsgsWithOpenStatus(){
+        List<Contact> contactMsgs = contactRepository.findMsgsWithStatus(EazySchoolConstants.OPEN);
+        return contactMsgs;
+    }
+
 //    public boolean updateMsgStatus(int contactId, String updatedBy){
 //        boolean isUpdated = false;
 //        int result = contactRepository.updateMsgStatus(contactId,EazySchoolConstants.CLOSE, updatedBy);
