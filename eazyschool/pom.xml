@@ -12,6 +12,7 @@
 	<artifactId>eazyschool</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>eazyschool</name>
+	<packaging>jar</packaging>
 	<description>Eazy School Web Application</description>
 	<url/>
 	<licenses>

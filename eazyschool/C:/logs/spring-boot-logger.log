@@ -39,3 +39,84 @@
 2025-05-28 19:41:18,442 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2025-05-28 19:41:18,447 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
 2025-05-28 19:42:31,089 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-7] Error message from the Dashboard page
+2025-05-28 20:01:27,415 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-28 20:01:27,483 INFO o.s.b.w.e.t.GracefulShutdown [Thread-5] Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-28 20:01:27,521 INFO o.a.j.l.DirectJDKLog [tomcat-shutdown] Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-28 20:01:27,533 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-05-28 20:01:27,534 INFO o.a.j.l.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-28 20:01:27,557 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28 20:01:27,592 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2025-05-28 20:01:29,247 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2025-05-28 20:01:29,775 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-28 20:01:29,789 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 12 ms. Found 7 JPA repository interfaces.
+2025-05-28 20:01:30,018 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-05-28 20:01:30,019 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-28 20:01:30,019 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-05-28 20:01:30,019 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-28 20:01:30,032 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-05-28 20:01:30,032 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 476 ms
+2025-05-28 20:01:30,131 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2025-05-28 20:01:32,827 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21d4b438
+2025-05-28 20:01:32,829 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2025-05-28 20:01:32,831 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-28 20:01:32,834 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-05-28 20:01:32,836 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-05-28 20:01:32,849 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-28 20:01:33,045 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-28 20:01:33,171 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-28 20:01:33,172 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28 20:01:33,286 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgs(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @Query(value=…) instead to apply sorting.
+2025-05-28 20:01:33,297 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgsNative(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @NativeQuery(value=…) instead to apply sorting.
+2025-05-28 20:01:33,369 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28 20:01:33,414 INFO o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer [restartedMain] Global AuthenticationManager configured with AuthenticationProvider bean with name eazySchoolUsernamePwdAuthenticationProvider
+2025-05-28 20:01:33,683 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-05-28 20:01:33,697 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-05-28 20:01:33,698 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-05-28 20:01:33,702 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-05-28 20:27:27,769 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 5 class path changes (3 additions, 0 deletions, 2 modifications)
+2025-05-28 20:27:27,857 INFO o.s.b.w.e.t.GracefulShutdown [Thread-7] Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-28 20:27:27,866 INFO o.a.j.l.DirectJDKLog [tomcat-shutdown] Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-28 20:27:27,877 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-05-28 20:27:27,879 INFO o.a.j.l.DirectJDKLog [Thread-7] Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-28 20:27:27,895 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28 20:27:27,933 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2025-05-28 20:27:29,789 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2025-05-28 20:27:39,837 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-5] Error message from the Dashboard page
+2025-05-28 20:27:39,841 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-5] defaultPageSize value with @Value annotation is : 10
+2025-05-28 20:27:39,841 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-5] successMsg value with @Value annotation is : Your message is submitted successfully.
+2025-05-28 20:27:39,843 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-5] defaultPageSize value with Environment is : 10
+2025-05-28 20:27:39,844 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-5] successMsg value with Environment is : Your message is submitted successfully.
+2025-05-28 20:27:39,844 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-5] Java Home environment variable using Environment is : null
+2025-05-28 20:28:07,259 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-05-28 20:28:07,714 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgs(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @Query(value=…) instead to apply sorting.
+2025-05-28 20:28:07,727 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgsNative(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @NativeQuery(value=…) instead to apply sorting.
+2025-05-28 20:28:07,778 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28 20:35:36,205 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-05-28 20:35:36,697 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgs(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @Query(value=…) instead to apply sorting.
+2025-05-28 20:35:36,708 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgsNative(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @NativeQuery(value=…) instead to apply sorting.
+2025-05-28 20:35:36,754 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28 20:35:43,245 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-05-28 20:35:43,633 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgs(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @Query(value=…) instead to apply sorting.
+2025-05-28 20:35:43,644 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgsNative(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @NativeQuery(value=…) instead to apply sorting.
+2025-05-28 20:35:43,694 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28 20:37:59,440 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-05-28 20:38:01,185 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgs(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @Query(value=…) instead to apply sorting.
+2025-05-28 20:38:01,211 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgsNative(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @NativeQuery(value=…) instead to apply sorting.
+2025-05-28 20:38:01,368 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28 20:41:49,573 WARN o.h.j.b.i.EntityManagerFactoryBuilderImpl [restartedMain] HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-05-28 20:41:51,622 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgs(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @Query(value=…) instead to apply sorting.
+2025-05-28 20:41:51,649 WARN o.s.d.j.r.q.NamedQuery [restartedMain] Query method public abstract org.springframework.data.domain.Page com.eazybytes.eazyschool.repository.ContactRepository.findOpenMsgsNative(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter; Sorting delivered via this Pageable will not be applied; Use @NativeQuery(value=…) instead to apply sorting.
+2025-05-28 20:41:51,811 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28 20:42:03,246 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-4] Error message from the Dashboard page
+2025-05-28 20:42:03,251 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-4] defaultPageSize value with @Value annotation is : 10
+2025-05-28 20:42:03,251 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-4] successMsg value with @Value annotation is : Your message is submitted successfully.
+2025-05-28 20:42:03,252 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-4] defaultPageSize value with Environment is : 10
+2025-05-28 20:42:03,253 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-4] successMsg value with Environment is : Your message is submitted successfully.
+2025-05-28 20:42:03,254 ERROR c.e.e.c.DashboardController [http-nio-8080-exec-4] Java Home environment variable using Environment is : /opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home
